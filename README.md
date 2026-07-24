@@ -86,11 +86,3 @@ python3 woot_gpu_scraper.py --min-discount 15
 ```
 
 **Or just leave `--loop` running** in a `screen`/`tmux` session or as a systemd service.
-
-## How it differs from a browser-scraper approach
-
-Woot exposes `GET /feed/{feedname}` (Computers, Electronics, Featured, Wootoff, etc.) which
-returns live offers with price, title, category, and URL — this is the same data source
-deal-alert bots like r/buildapcsales' AutoModerator-style tools and Reddit deal accounts
-ultimately rely on for Woot listings, just accessed the sanctioned way instead of parsing
-HTML (which breaks whenever Woot changes their frontend, and against their ToS to scrape).
